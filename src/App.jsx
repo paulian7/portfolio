@@ -2,9 +2,8 @@ import "./App.css";
 import { NavBar } from "./components/NavBar";
 import { useState } from "react";
 import { MobileNav } from "./components/MobileNav";
-import { Home
+import { Home } from "./components/sections/Home";
 
- } from "./components/sections/Home";
 function App() {
   const [menuOpen, setMenuOpen] = useState(false); 
 
