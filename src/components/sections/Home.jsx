@@ -24,12 +24,12 @@ export const Home = () => {
         <p className="text-base sm:text-lg mb-4 font-normal">
           I’m Paulian <span className="italic">(pronounced Paul-Lee-Anne)</span>
           — a{" "}
-          <span className="text-[#0A7FBF] font-medium">software engineer </span>
-          and{"  "}
+          <span className="text-[#0A7FBF] font-medium">software engineer</span>
+          {" "}and{" "}
           <span className="text-[#0A7FBF] font-medium">
-            product enthusiast{" "}
+            product enthusiast
           </span>
-          who loves building projects that spark meaningful change. From
+          {" "}who loves building projects that spark meaningful change. From
           developing a web app for a research group to directing operations for
           a major hackathon, I thrive at the intersection of technical
           problem-solving and community impact.
