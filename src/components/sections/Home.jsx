@@ -11,28 +11,39 @@ export const Home = () => {
         <img
           src="/landingPic.png"
           alt="Home page picture displaying Paulian"
-          className="rounded-lg object-cover w-64 sm:w-72 md:w-80 lg:w-[450px] max-w-full"
+          className="rounded-lg object-cover w-64 sm:w-72 md:w-80 lg:w-[450px] max-w-full shadow-md"
         />
       </div>
 
       {/* text */}
       <div className="flex flex-col max-w-xl text-center md:text-left self-center mt-10 md:mt-0">
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6 font-baloo break-words">
-          Hello hello! I'm Paulian :)
+          Hello hello!
         </h1>
 
-        <p className="text-base sm:text-lg mb-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+        <p className="text-base sm:text-lg mb-4 font-normal leading-loose">
+          I’m Paulian <span className="italic">(pronounced Paul-Lee-Anne)</span>
+          — a{" "}
+          <span className="text-[#0A7FBF] font-medium">software engineer</span>
+          {" "}and{" "}
+          <span className="text-[#0A7FBF] font-medium">
+            product enthusiast
+          </span>
+          {" "}who loves building projects that spark meaningful change. From
+          developing a web app for a research group to directing operations for
+          a major hackathon, I thrive at the intersection of technical
+          problem-solving and community impact.
         </p>
 
-        <p className="text-base sm:text-lg mb-6">
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-          dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est
-          laborum.
+        <p className="text-base sm:text-lg mb-6 font-normal leading-loose">
+          Outside of work, I’m usually exploring cozy cafes, running, watching
+          movies, or reading.{" "}
+          <a
+            href="#about"
+            className="text-[#0A7FBF] font-medium hover:underline"
+          >
+            Learn more about me →
+          </a>
         </p>
 
         {/* buttons & links section */}
@@ -42,7 +53,7 @@ export const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Paulian's Resume"
-            className="transition-colors duration-300 hover:text-gray-500"
+            className="transition-transform duration-300 hover:scale-110 hover:text-gray-500"
           >
             <FaFileAlt />
           </a>
@@ -51,7 +62,7 @@ export const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Paulian's LinkedIn"
-            className="transition-colors duration-300 hover:text-gray-500"
+            className="transition-transform duration-300 hover:scale-110 hover:text-gray-500"
           >
             <FaLinkedin />
           </a>
@@ -60,7 +71,7 @@ export const Home = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Paulian's GitHub"
-            className="transition-colors duration-300 hover:text-gray-500"
+            className="transition-transform duration-300 hover:scale-110 hover:text-gray-500"
           >
             <FaGithubSquare />
           </a>

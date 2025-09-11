@@ -22,7 +22,7 @@ export const MobileNav = ({ menuOpen, setMenuOpen }) => {
       <a
         href="#about"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-black my-4 transform transition-transform duration-300 hover:text-gray-500 active:text-gray-500
+        className={`text-2xl font-semibold text-black my-4 transform transition-transform duration-500 hover:text-gray-500 active:text-gray-500
             ${
               menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
             }
@@ -34,7 +34,7 @@ export const MobileNav = ({ menuOpen, setMenuOpen }) => {
       <a
         href="#projects"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-black my-4 transform transition-transform duration-300 hover:text-gray-500 active:text-gray-500
+        className={`text-2xl font-semibold text-black my-4 transform transition-transform duration-500 hover:text-gray-500 active:text-gray-500
             ${
               menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
             }
@@ -46,7 +46,7 @@ export const MobileNav = ({ menuOpen, setMenuOpen }) => {
       <a
         href="#fun"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-black my-4 transform transition-transform duration-300 hover:text-gray-500 active:text-gray-500
+        className={`text-2xl font-semibold text-black my-4 transform transition-transform duration-500 hover:text-gray-500 active:text-gray-500
             ${
               menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
             }
@@ -58,7 +58,7 @@ export const MobileNav = ({ menuOpen, setMenuOpen }) => {
       <a
         href="#contact"
         onClick={() => setMenuOpen(false)}
-        className={`text-2xl font-semibold text-black my-4 transform transition-transform duration-300 hover:text-gray-500 active:text-gray-500
+        className={`text-2xl font-semibold text-black my-4 transform transition-transform duration-500 hover:text-gray-500 active:text-gray-500
             ${
               menuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
             }
