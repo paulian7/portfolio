@@ -21,7 +21,7 @@ export const Home = () => {
           Hello hello!
         </h1>
 
-        <p className="text-base sm:text-lg mb-4 font-normal">
+        <p className="text-base sm:text-lg mb-4 font-normal leading-loose">
           I’m Paulian <span className="italic">(pronounced Paul-Lee-Anne)</span>
           — a{" "}
           <span className="text-[#0A7FBF] font-medium">software engineer</span>
@@ -35,7 +35,7 @@ export const Home = () => {
           problem-solving and community impact.
         </p>
 
-        <p className="text-base sm:text-lg mb-6 font-normal">
+        <p className="text-base sm:text-lg mb-6 font-normal leading-loose">
           Outside of work, I’m usually exploring cozy cafes, running, watching
           movies, or reading.{" "}
           <a
