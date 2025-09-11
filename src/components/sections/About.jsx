@@ -1,14 +1,6 @@
 import { FaArrowRight } from "react-icons/fa6";
 
 export const About = () => {
-  // const hobbies = [
-  //   "cafe hopping",
-  //   "reading",
-  //   "journaling",
-  //   "listening to movie soundtracks",
-  //   "running",
-  // ];
-
   return (
     <section
       id="about"
@@ -21,9 +13,9 @@ export const About = () => {
 
       {/* content container */}
       <div className="max-w-5xl w-full grid grid-cols-1 md:grid-cols-2 gap-12 px-6">
-        {/* Left column */}
+        {/* left column */}
         <div className="space-y-12">
-          {/* Education */}
+          {/* education */}
           <div>
             <h3 className="text-2xl font-bold font-baloo mb-4 text-black">
               Education
@@ -39,7 +31,7 @@ export const About = () => {
             </ul>
           </div>
 
-          {/* Outside of Tech */}
+          {/* outside of tech */}
           <div>
             <h3 className="text-2xl font-bold mb-4 text-black font-baloo">
               Outside of Tech
@@ -105,7 +97,7 @@ export const About = () => {
           </div>
         </div>
 
-        {/* Right column */}
+        {/* right column */}
         <div>
           <h3 className="text-2xl font-bold mb-4 text-black font-baloo">
             Experiences
@@ -139,7 +131,7 @@ export const About = () => {
               </a>
             </li>
 
-            {/* UCR Software Developer */}
+            {/* omega initative - swe */}
             <li className="mb-10 ms-4">
               <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-black dark:border-black dark:bg-black"></div>
               <time className="mb-1 text-sm font-semibold leading-none text-[#0A7FBF]">
@@ -169,7 +161,7 @@ export const About = () => {
               </a>
             </li>
 
-            {/* Cutie & Citrus Hack */}
+            {/* cutie & citrus hack - ops */}
             <li className="mb-10 ms-4">
               <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-black dark:border-black dark:bg-black"></div>
               <time className="mb-1 text-sm font-semibold leading-none text-[#0A7FBF]">
@@ -198,7 +190,7 @@ export const About = () => {
               </a>
             </li>
 
-            {/* ACM Leadership */}
+            {/* acm secretary */}
             <li className="mb-10 ms-4">
               <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-black dark:border-black dark:bg-black"></div>
               <time className="mb-1 text-sm font-semibold leading-none text-[#0A7FBF]">
@@ -236,6 +228,7 @@ export const About = () => {
               </a>
             </li>
 
+            {/* cs10a-cs10c */}
             <li className="mb-10 ms-4">
               <div className="absolute w-3 h-3 bg-black rounded-full mt-1.5 -start-1.5 border border-black dark:border-black dark:bg-black"></div>
               <time className="mb-1 text-sm font-semibold leading-none text-[#0A7FBF]">
