@@ -4,6 +4,7 @@ import { useState } from "react";
 import { MobileNav } from "./components/MobileNav";
 import { Home } from "./components/sections/Home";
 import { Draw } from "./components/Draw";
+import { About } from "./components/sections/About";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false); 
@@ -14,6 +15,7 @@ function App() {
       <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <MobileNav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Home />
+      <About />
       <Draw />
     </div>
   </>

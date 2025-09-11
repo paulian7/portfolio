@@ -28,22 +28,22 @@ export const NavBar = ({ menuOpen, setMenuOpen }) => {
 
       {/* desktop nav bar */}
       <div className="hidden md:flex items-center space-x-8">
-        <a href="#about" className="group text-black transition duration-300">
+        <a href="#about" className="group text-black transition duration-500">
           about
           <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black/85 rounded-full"></span>
         </a>
 
-        <a href="#projects" className="group text-black transition duration-300">
+        <a href="#projects" className="group text-black transition duration-500">
           projects
           <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black/85 rounded-full"></span>
         </a>
 
-        <a href="#fun" className="group text-black transition duration-300">
+        <a href="#fun" className="group text-black transition duration-500">
           fun
           <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black/85 rounded-full"></span>
         </a>
 
-        <a href="#contact" className="group text-black transition duration-300">
+        <a href="#contact" className="group text-black transition duration-500">
           contact
           <span className="block max-w-0 group-hover:max-w-full transition-all duration-500 h-0.5 bg-black/85 rounded-full"></span>
         </a>
