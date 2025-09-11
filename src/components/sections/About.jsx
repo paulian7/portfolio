@@ -1,13 +1,13 @@
 import { FaArrowRight } from "react-icons/fa6";
 
 export const About = () => {
-  const hobbies = [
-    "cafe hopping",
-    "reading",
-    "journaling",
-    "listening to movie soundtracks",
-    "running",
-  ];
+  // const hobbies = [
+  //   "cafe hopping",
+  //   "reading",
+  //   "journaling",
+  //   "listening to movie soundtracks",
+  //   "running",
+  // ];
 
   return (
     <section
@@ -44,8 +44,26 @@ export const About = () => {
             <h3 className="text-2xl font-bold mb-4 text-black font-baloo">
               Outside of Tech
             </h3>
+
             <p className="text-black leading-relaxed ml-2 text-base">
-              I'm a huge{" "}
+              I'm a big fan of{" "}
+              <span className="text-[#0A7FBF] font-medium">matcha</span> (and
+              the occasional{" "}
+              <span className="text-[#0A7FBF] font-medium">coffee</span>).
+              Lately, I've been on the hunt for my next go-to cafe - right now,{" "}
+              <a
+                href="https://www.yelp.com/biz/airoma-cafe-garden-grove-3?uid=Df4szU4kB9x0TZaxDL1lXQ&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="italic text-[#0A7FBF] underline"
+              >
+                Airoma Cafe
+              </a>{" "}
+              is on top for their pandan drinks.
+            </p>
+
+            <p className="text-black leading-relaxed ml-2 mt-4 text-base">
+              I'm also a huge{" "}
               <span className="text-[#0A7FBF] font-medium">movie fanatic</span>!
               My top 3 films have to be{" "}
               <a
@@ -74,17 +92,15 @@ export const About = () => {
               >
                 How to Train Your Dragon
               </a>
-              {"."}
+              .
             </p>
 
             <p className="text-black leading-relaxed ml-2 mt-4 text-base">
-              If I'm not watching anything, you can catch me —{" "}
-              {hobbies.map((hobby, i) => (
-                <span key={i}>
-                  <span className="text-[#0A7FBF] font-medium">{hobby}</span>
-                  {i < hobbies.length - 1 ? ", " : "."}
-                </span>
-              ))}
+              Chances are, if I'm working, you'll probably catch me with a{" "}
+              <span className="text-[#0A7FBF] font-medium">
+                movie soundtrack
+              </span>{" "}
+              playing in the background.
             </p>
           </div>
         </div>
@@ -118,7 +134,7 @@ export const About = () => {
       hover:bg-gray-500 hover:text-white 
       focus:outline-none focus:ring-2 focus:ring-gray-300 transition-colors duration-300"
               >
-                🛠 See the projects I built
+                🛠 See the projects I built!
                 <FaArrowRight className="ml-4" />
               </a>
             </li>
