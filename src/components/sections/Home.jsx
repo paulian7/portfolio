@@ -7,8 +7,8 @@ export const Home = () => {
       id="home"
       className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-8 md:gap-36 px-6 md:px-16 lg:px-24 pt-20 sm:pt-24"
     >
+      {/* picture */}
       <RevealOnScroll>
-        {/* picture */}
         <div className="flex-shrink-0 w-full md:w-auto flex justify-center md:justify-start">
           <img
             src="/landingPic.png"
@@ -16,12 +16,15 @@ export const Home = () => {
             className="rounded-lg object-cover w-64 sm:w-72 md:w-80 lg:w-[450px] max-w-full shadow-md"
           />
         </div>
+      </RevealOnScroll>
 
-        {/* text */}
+      {/* text */}
+      <RevealOnScroll>
         <div className="flex flex-col max-w-xl text-center md:text-left self-center mt-10 md:mt-0">
           <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6 font-baloo break-words">
             Hello hello!
           </h1>
+
           <p className="text-base sm:text-lg mb-4 font-normal leading-loose">
             I’m Paulian{" "}
             <span className="italic">(pronounced Paul-Lee-Anne)</span>— a{" "}
