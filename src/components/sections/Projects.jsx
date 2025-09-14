@@ -23,10 +23,10 @@ export const Projects = () => {
               Personal Portfolio
             </h3>
             <p className="text-sm font-normal text-gray-600 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet
-              consectetur adipiscing elit quisque faucibus ex sapien. Quisque
-              faucibus ex sapien vitae pellentesque sem placerat. Vitae
-              pellentesque sem placerat in id cursus mi.
+              What you’re looking at right now! I built this to go back to the
+              basics before jumping back into Next.js, and along the way I
+              realized just how tricky (and fun) responsive design and styling
+              from scratch can be.
             </p>
             <div className="flex flex-wrap gap-2">
               {["React", "Tailwind CSS", "Vercel", "Figma"].map((tech, key) => (
@@ -59,10 +59,10 @@ export const Projects = () => {
               OMEGA Initiative
             </h3>
             <p className="text-sm font-normal text-gray-600 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet
-              consectetur adipiscing elit quisque faucibus ex sapien. Quisque
-              faucibus ex sapien vitae pellentesque sem placerat. Vitae
-              pellentesque sem placerat in id cursus mi.
+              A research web app built to bring together fragmented air quality
+              data for 50+ researchers. This project taught me how rewarding it
+              is to build something people actually depend on - and how much I
+              enjoy turning someone’s vision into a working product.
             </p>
             <div className="flex flex-wrap gap-2">
               {[
@@ -100,10 +100,9 @@ export const Projects = () => {
             />
             <h3 className="text-xl font-bold font-baloo text-black">NOVO</h3>
             <p className="text-sm font-normal text-gray-600 leading-relaxed">
-              Lorem ipsum dolor sit amet consectetur adipiscing elit. Amet
-              consectetur adipiscing elit quisque faucibus ex sapien. Quisque
-              faucibus ex sapien vitae pellentesque sem placerat. Vitae
-              pellentesque sem placerat in id cursus mi.
+              A dating app where people connect through new experiences. I built
+              it as my final project for my college web dev class (CS110), and it’s the
+              project that really sparked my love for front-end development.
             </p>
             <div className="flex flex-wrap gap-2">
               {[
