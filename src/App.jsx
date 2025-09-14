@@ -6,6 +6,8 @@ import { Home } from "./components/sections/Home";
 import { Draw } from "./components/Draw";
 import { About } from "./components/sections/About";
 import { Projects } from "./components/sections/Projects";
+import { Fun } from "./components/sections/Fun";
+import { Contact } from "./components/sections/Contact";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false); 
@@ -18,6 +20,8 @@ function App() {
       <Home />
       <About />
       <Projects />
+      <Fun />
+      <Contact />
       <Draw />
     </div>
   </>
