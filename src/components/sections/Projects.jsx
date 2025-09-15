@@ -26,10 +26,10 @@ export const Projects = () => {
                 Personal Portfolio
               </h3>
               <p className="text-sm font-normal text-gray-600 leading-relaxed">
-                What you’re looking at right now! I built this to go back to the
-                basics before jumping back into Next.js, and along the way I
-                realized just how tricky (and fun) responsive design and styling
-                from scratch can be.
+                What you’re looking at right now! I built this project to get
+                back to the basics before diving into Next.js, and along the way
+                I discovered just how tricky — and fun — responsive design and
+                styling from scratch can be.
               </p>
               <div className="flex flex-wrap gap-2">
                 {["React", "Tailwind CSS", "EmailJS", "Vercel", "Figma"].map(
@@ -108,7 +108,7 @@ export const Projects = () => {
               <p className="text-sm font-normal text-gray-600 leading-relaxed">
                 A dating app where people connect through new experiences. I
                 built it as my final project for my college web dev class
-                (CS110), and it’s the project that really sparked my love for
+                (CS110), and it’s <span className="italic underline">THE</span> project that really sparked my love for
                 front-end development.
               </p>
               <div className="flex flex-wrap gap-2">

@@ -40,29 +40,18 @@ export const About = () => {
               </h3>
 
               <p className="text-black leading-relaxed ml-2 text-base">
-                I'm a big fan of{" "}
-                <span className="text-[#0A7FBF] font-medium">matcha</span> (and
-                the occasional{" "}
-                <span className="text-[#0A7FBF] font-medium">coffee</span>).
-                Lately, I've been on the hunt for my next go-to cafe - right
-                now,{" "}
-                <a
-                  href="https://www.yelp.com/biz/airoma-cafe-garden-grove-3?uid=Df4szU4kB9x0TZaxDL1lXQ&utm_campaign=www_business_share_popup&utm_medium=copy_link&utm_source=(direct)"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="italic text-[#0A7FBF] underline"
-                >
-                  Airoma Cafe
-                </a>{" "}
-                is on top for their pandan drinks.
+                I'm a huge{" "}
+                <span className="text-[#0A7FBF] font-medium">matcha</span> lover
+                — but if I'm not sipping on matcha, you'll probably find me with
+                a cup of{" "}
+                <span className="text-[#0A7FBF] font-medium">coffee</span> in my
+                hand.
               </p>
 
               <p className="text-black leading-relaxed ml-2 mt-4 text-base">
-                I'm also a huge{" "}
-                <span className="text-[#0A7FBF] font-medium">
-                  movie fanatic
-                </span>
-                ! My top 3 films have to be{" "}
+                Outside of my caffeine obsession, I'm an absolute{" "}
+                <span className="text-[#0A7FBF] font-medium">film fanatic</span>
+                . My top 3 films are{" "}
                 <a
                   href="https://www.imdb.com/title/tt3783958/"
                   target="_blank"
@@ -80,7 +69,7 @@ export const About = () => {
                 >
                   Back to the Future
                 </a>
-                {", "}
+                {", and "}
                 <a
                   href="https://www.imdb.com/title/tt0892769/"
                   target="_blank"
@@ -93,11 +82,55 @@ export const About = () => {
               </p>
 
               <p className="text-black leading-relaxed ml-2 mt-4 text-base">
-                Chances are, if I'm working, you'll probably catch me with a{" "}
-                <span className="text-[#0A7FBF] font-medium">
-                  movie soundtrack
-                </span>{" "}
-                playing in the background.
+                For television shows, my favorites include{" "}
+                <a
+                  href="https://www.imdb.com/title/tt5687612/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="italic text-[#0A7FBF] underline"
+                >
+                  Fleabag
+                </a>
+                {", "}
+                <a
+                  href="https://www.imdb.com/title/tt5421602/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="italic text-[#0A7FBF] underline"
+                >
+                  Anne with an E
+                </a>
+                {", "}
+                <a
+                  href="https://www.imdb.com/title/tt0892769/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="italic text-[#0A7FBF] underline"
+                >
+                  The Bear
+                </a>
+                {", and "}
+                <a
+                  href="https://www.imdb.com/title/tt0892769/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="italic text-[#0A7FBF] underline"
+                >
+                  Schitt's Creek
+                </a>
+                .
+              </p>
+
+              <p className="text-black leading-relaxed ml-2 mt-4 text-base">
+                As a result, I almost always have a movie soundtrack playing
+                while I work — and I even put together a Spotify playlist with
+                my favorite pieces if you’d like to check it out{" "}
+                <a
+                  href="#fun"
+                  className="text-[#0A7FBF] font-medium hover:underline"
+                >
+                  here! →
+                </a>
               </p>
             </div>
           </div>
@@ -117,12 +150,15 @@ export const About = () => {
                   Building & Leveling Up
                 </h3>
                 <p className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
-                  In June 2024, I lost my mom to stage 4 cancer. I spent the
-                  following months focusing on family, personal well-being, and
-                  revisiting computer science fundamentals through LeetCode
-                  while building new projects. It’s been a year of healing,
-                  growth, and resilience - experiences that continue to shape
-                  the work I do today.
+                  In June 2024, I lost my mom to stage 4 cancer. In the months
+                  that followed, I focused on family and personal well-being —
+                  from picking up running to visiting my parents’ old stomping
+                  grounds in Vietnam. It was a year of healing, growth, and
+                  resilience, and those experiences continue to shape who I am
+                  today. Alongside that, I’ve been brushing up on data
+                  structures and algorithms and building personal projects, and
+                  I’m excited to carry both my personal and technical growth
+                  into my work.
                 </p>
                 <a
                   href="#projects"
@@ -146,12 +182,12 @@ export const About = () => {
                   Product-Focused Software Developer @ UC Riverside
                 </h3>
                 <p className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
-                  I co-led a team of four to build a full-stack air quality web
-                  app, adopted by 50+ researchers. Along the way, I discovered
-                  the importance of clear stakeholder communication to ensure
-                  the product met real user needs. What started as a senior
-                  capstone project later grew into part-time work with the
-                  research group.
+                  One of the projects closest to my heart — my first working
+                  directly with stakeholders! I co-led a team of four to build a
+                  full-stack web app for 50+ air quality researchers, learning
+                  the value of clear communication to meet their needs. Fun
+                  fact: it started as a senior capstone and later became
+                  part-time work with the research group.
                 </p>
                 <a
                   href="https://github.com/wporter/air-quality"
@@ -177,11 +213,13 @@ export const About = () => {
                   Director of Operations @ Cutie & Citrus Hack
                 </h3>
                 <p className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
-                  I helped run the first hybrid hackathon since the pandemic,
-                  bringing together 500+ participants, 12+ sponsors, and over
-                  $25K in prizes. Coordinating logistics across sponsorship,
-                  marketing, web development, and volunteer teams taught me how
-                  to thrive under pressure and communicate effectively.
+                  One of the most rewarding leadership roles of my college
+                  career — I helped run the university’s first hybrid hackathon
+                  since COVID, bringing together 500+ participants, 12+
+                  sponsors, and $25K in prizes. Coordinating logistics across
+                  marketing, sponsorship, web development, and volunteer teams
+                  taught me to communicate effectively and thrive under
+                  pressure.
                 </p>
                 <a
                   href="https://citrushack2022.vercel.app/"
@@ -206,11 +244,11 @@ export const About = () => {
                   Secretary @ Association of Computing Machinery, UCR
                 </h3>
                 <p className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
-                  I revamped newsletters for 300+ members, boosting engagement
-                  by 60%, and helped grow membership 40% through career-focused
-                  content and mentoring on Medium. My favorite part was seeing
-                  each member bring their own unique story to the club. You can
-                  explore the articles from my term as secretary{" "}
+                  Where I got a taste of journalism! As secretary, I revamped
+                  newsletters for 300+ members, boosting engagement by 60%. I
+                  also wrote articles on Medium highlighting professional
+                  development and showcasing members, helping grow and retain
+                  membership by 40%. You can explore the articles{" "}
                   <a
                     href="https://medium.com/acm-at-ucr"
                     target="_blank"
@@ -244,10 +282,9 @@ export const About = () => {
                   A Year of Data Structures & Algorithms
                 </h3>
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                  I completed 3 quarters of intensive coursework at the
-                  University of California, Riverside, gaining hands-on
-                  experience in C++ and mastering core concepts in data
-                  structures, algorithms, and problem-solving.
+                  My humble beginnings as a software developer — three quarters
+                  of C++ data structures and algorithms, building real
+                  problem-solving chops along the way.
                 </p>
               </li>
             </ol>
