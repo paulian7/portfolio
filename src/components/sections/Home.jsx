@@ -27,7 +27,7 @@ export const Home = () => {
 
           <p className="text-base sm:text-lg mb-4 font-normal leading-loose">
             I’m Paulian{" "}
-            <span className="italic">(pronounced Paul-Lee-Anne)</span> - a{" "}
+            <span className="italic">(pronounced Paul-Lee-Anne)</span> — a{" "}
             <span className="text-[#0A7FBF] font-medium">
               software engineer
             </span>{" "}
@@ -35,15 +35,15 @@ export const Home = () => {
             <span className="text-[#0A7FBF] font-medium">
               product enthusiast
             </span>{" "}
-            who loves building projects that spark meaningful change. From
-            developing a web app for a research group to directing operations
+            who loves building projects that spark meaningful change. Whether
+            developing a web app for a research group or directing operations
             for a major hackathon, I thrive at the intersection of technical
             problem-solving and community impact.
           </p>
 
           <p className="text-base sm:text-lg mb-6 font-normal leading-loose">
-            Outside of work, I’m usually exploring cozy cafes, running, watching
-            movies, or reading.{" "}
+            Outside of work, I’m usually running, watching movies/tv shows,
+            reading, or finding my next cup of matcha.{" "}
             <a
               href="#about"
               className="text-[#0A7FBF] font-medium hover:underline"
