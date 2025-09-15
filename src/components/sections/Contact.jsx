@@ -44,9 +44,6 @@ export const Contact = () => {
 
         {/* section's content */}
         <div className="px-4 w-150">
-          {/* <p className="mb-6 text-lg text-gray-800">
-            Feel free to reach out to me! :)
-          </p> */}
           <form className="space-y-6" onSubmit={handleSubmit}>
             <div className="relative">
               <input
