@@ -260,7 +260,7 @@ export const About = () => {
                   !
                 </p>
                 <a
-                  href="https://acm-dev.cs.ucr.edu/"
+                  href="https://acm.cs.ucr.edu/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-4 py-2 text-sm font-medium 
