@@ -32,7 +32,7 @@ export const Projects = () => {
                 from scratch can be.
               </p>
               <div className="flex flex-wrap gap-2">
-                {["React", "Tailwind CSS", "Vercel", "Figma"].map(
+                {["React", "Tailwind CSS", "EmailJS", "Vercel", "Figma"].map(
                   (tech, key) => (
                     <span
                       key={key}
