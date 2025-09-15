@@ -8,23 +8,25 @@ import { About } from "./components/sections/About";
 import { Projects } from "./components/sections/Projects";
 import { Fun } from "./components/sections/Fun";
 import { Contact } from "./components/sections/Contact";
+import { Footer } from "./components/Footer";
 
 function App() {
-  const [menuOpen, setMenuOpen] = useState(false); 
-
+  const [menuOpen, setMenuOpen] = useState(false);
+  
   return (
-  <>
-    <div>
-      <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <MobileNav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Home />
-      <About />
-      <Projects />
-      <Fun />
-      <Contact />
-      <Draw />
-    </div>
-  </>
+    <>
+      <div>
+        <NavBar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <MobileNav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <Home />
+        <About />
+        <Projects />
+        <Fun />
+        <Contact />
+        <Draw />
+        <Footer />
+      </div>
+    </>
   );
 }
 
