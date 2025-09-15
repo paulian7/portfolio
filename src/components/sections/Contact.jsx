@@ -34,17 +34,17 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="min-h-screen flex flex-col items-center justify-center py-20 bg-white"
+      className="min-h-screen flex flex-col items-center justify-center py-16 sm:py-20 bg-white"
     >
       <RevealOnScroll>
         {/* title */}
-        <h2 className="text-4xl font-bold mb-12 font-baloo text-black text-center">
+        <h2 className="text-3xl sm:text-4xl font-bold mb-10 sm:mb-12 font-baloo text-black text-center">
           Let's Connect!
         </h2>
 
         {/* section's content */}
-        <div className="px-4 w-150">
-          <form className="space-y-6" onSubmit={handleSubmit}>
+        <div className="w-full sm:w-[85vw] md:w-[70vw] lg:w-[60vw] xl:w-[50vw] 2xl:w-[45vw] mx-auto">
+          <form className="space-y-4 sm:space-y-6" onSubmit={handleSubmit}>
             <div className="relative">
               <input
                 type="text"
@@ -54,7 +54,7 @@ export const Contact = () => {
                 value={formData.name}
                 className="w-full bg-white border border-black rounded px-4 py-3 text-black placeholder-gray-400
                   focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-gray-300
-                  transition-colors duration-300 ease-in-out font-baloo"
+                  transition-colors duration-300 ease-in-out text-sm sm:text-base font-baloo"
                 placeholder="Name..."
                 onChange={(e) =>
                   setFormData({ ...formData, name: e.target.value })
@@ -71,7 +71,7 @@ export const Contact = () => {
                 value={formData.email}
                 className="w-full bg-white border border-black rounded px-4 py-3 text-black placeholder-gray-400
                   focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-gray-300
-                  transition-colors duration-300 ease-in-out font-baloo"
+                  transition-colors duration-300 ease-in-out text-sm sm:text-base font-baloo"
                 placeholder="example@gmail.com"
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
@@ -88,7 +88,7 @@ export const Contact = () => {
                 rows={5}
                 className="w-full bg-white border border-black rounded px-4 py-3 text-black placeholder-gray-400
                   focus:outline-none focus:ring-2 focus:ring-gray-300 focus:border-gray-300
-                  transition-colors duration-300 ease-in-out resize-none font-baloo"
+                  transition-colors duration-300 ease-in-out resize-none text-sm sm:text-base font-baloo"
                 placeholder="Your Message..."
                 onChange={(e) =>
                   setFormData({ ...formData, message: e.target.value })
@@ -98,8 +98,8 @@ export const Contact = () => {
 
             <button
               type="submit"
-              className="w-full bg-black text-white py-3 px-6 rounded font-medium transition-all duration-300 ease-in-out
-                 hover:-translate-y-0.5 hover:bg-gray-500 active:bg-gray-600 font-baloo"
+              className="w-full bg-black text-white py-3 px-6 rounded font-medium text-sm sm:text-base
+                 transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-gray-500 active:bg-gray-600 font-baloo"
             >
               Send Message!
             </button>
