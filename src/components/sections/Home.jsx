@@ -27,7 +27,7 @@ export const Home = () => {
 
           <p className="text-base sm:text-lg mb-4 font-normal leading-loose">
             I’m Paulian{" "}
-            <span className="italic">(pronounced Paul-Lee-Anne)</span>— a{" "}
+            <span className="italic">(pronounced Paul-Lee-Anne)</span> - a{" "}
             <span className="text-[#0A7FBF] font-medium">
               software engineer
             </span>{" "}
@@ -53,13 +53,13 @@ export const Home = () => {
           </p>
 
           {/* buttons & links section */}
-          <div className="flex justify-center md:justify-start space-x-6 text-2xl md:text-3xl">
+          <div className="flex justify-center md:justify-start space-x-6 text-2xl md:text-3xl mb-12">
             <a
               href="/Paulian_Le_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Paulian's Resume"
-              className="transition-transform duration-300 hover:scale-110 hover:text-gray-500"
+              className="hover:-translate-y-1 hover:shadow-lg transition-transform hover:text-gray-500"
             >
               <FaFileAlt />
             </a>
@@ -68,7 +68,7 @@ export const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Paulian's LinkedIn"
-              className="transition-transform duration-300 hover:scale-110 hover:text-gray-500"
+              className="hover:-translate-y-1 hover:shadow-lg transition-transform hover:text-gray-500"
             >
               <FaLinkedin />
             </a>
@@ -77,7 +77,7 @@ export const Home = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Paulian's GitHub"
-              className="transition-transform duration-300 hover:scale-110 hover:text-gray-500"
+              className="hover:-translate-y-1 hover:shadow-lg transition-transform hover:text-gray-500"
             >
               <FaGithubSquare />
             </a>
