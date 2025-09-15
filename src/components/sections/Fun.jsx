@@ -28,15 +28,13 @@ export const Fun = () => {
       className="min-h-screen flex flex-col items-center justify-center py-20 bg-gray-50"
     >
       <RevealOnScroll>
-        {/* title of sec */}
         <h2 className="text-4xl font-bold mb-12 font-baloo text-black text-center">
           Fun
         </h2>
 
-        {/* sets grid layout */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto w-full px-6">
-          {/* left col - spotify */}
-          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col justify-between row-span-2">
+          {/* left col - Spotify */}
+          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col justify-between row-span-2 hover:-translate-y-1 hover:shadow-lg transition-transform">
             <h3 className="text-lg font-bold mb-4 text-black font-baloo">
               My Soundtrack Playlist 🎥
             </h3>
@@ -51,8 +49,8 @@ export const Fun = () => {
             ></iframe>
           </div>
 
-          {/* mid col - pictures */}
-          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col">
+          {/* mid col - snapshots */}
+          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col hover:-translate-y-1 hover:shadow-lg transition-transform">
             <h3 className="text-lg font-bold mb-4 text-black font-baloo">
               My Favorite Snapshots 📸
             </h3>
@@ -66,9 +64,9 @@ export const Fun = () => {
             />
           </div>
 
-          {/* right col - random misc */}
+          {/* right col - misc */}
           <div className="space-y-6">
-            <div className="bg-white rounded-xl shadow-md p-6">
+            <div className="bg-white rounded-xl shadow-md p-6 hover:-translate-y-1 hover:shadow-lg transition-transform">
               <h3 className="text-lg font-bold mb-2 text-black font-baloo">
                 Matcha Rankings 🌱
               </h3>
@@ -79,7 +77,7 @@ export const Fun = () => {
               </ol>
             </div>
 
-            <div className="bg-white rounded-xl shadow-md p-6">
+            <div className="bg-white rounded-xl shadow-md p-6 hover:-translate-y-1 hover:shadow-lg transition-transform">
               <h3 className="text-lg font-bold mb-2 text-black font-baloo">
                 Currently Reading 📖
               </h3>

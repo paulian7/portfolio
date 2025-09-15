@@ -13,6 +13,7 @@ body {
   font-family: "Open Sans", sans-serif;
   background: #ffffff;
   color: #000000;
+  scroll-behavior: smooth;
 }
 
 /* animations */
