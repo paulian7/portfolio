@@ -117,12 +117,12 @@ export const About = () => {
                   Building & Leveling Up
                 </h3>
                 <p className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
-                  After my mom’s passing from stage 4 cancer in June 2024, I
-                  took time to focus on my family and personal well-being while
-                  revisiting computer science fundamentals through LeetCode and
-                  creating new projects. This past year has been one of healing,
-                  growth, and resilience — experiences I’m carrying into what’s
-                  next.
+                  In June 2024, I lost my mom to stage 4 cancer. I spent the
+                  following months focusing on family, personal well-being, and
+                  revisiting computer science fundamentals through LeetCode
+                  while building new projects. It’s been a year of healing,
+                  growth, and resilience - experiences that continue to shape
+                  the work I do today.
                 </p>
                 <a
                   href="#projects"
@@ -146,11 +146,12 @@ export const About = () => {
                   Product-Focused Software Developer @ UC Riverside
                 </h3>
                 <p className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
-                  Co-led a team of four to build a full-stack air quality web
-                  app adopted by 50+ researchers. Learned the value of
-                  consistent stakeholder communication to ensure the product met
-                  real user needs. Originally a senior capstone project, later
-                  extended into part-time work with the research group.
+                  I co-led a team of four to build a full-stack air quality web
+                  app, adopted by 50+ researchers. Along the way, I discovered
+                  the importance of clear stakeholder communication to ensure
+                  the product met real user needs. What started as a senior
+                  capstone project later grew into part-time work with the
+                  research group.
                 </p>
                 <a
                   href="https://github.com/wporter/air-quality"
@@ -176,11 +177,11 @@ export const About = () => {
                   Director of Operations @ Cutie & Citrus Hack
                 </h3>
                 <p className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
-                  Helped run the first hybrid hackathon since the
-                  pandemic—bringing together 500+ participants, 12+ sponsors,
-                  and $25K+ in prizes. Coordinated logistics across sponsorship,
-                  marketing, and web dev teams, learning how to thrive under
-                  pressure and keep communication sharp.
+                  I helped run the first hybrid hackathon since the pandemic,
+                  bringing together 500+ participants, 12+ sponsors, and over
+                  $25K in prizes. Coordinating logistics across sponsorship,
+                  marketing, web development, and volunteer teams taught me how
+                  to thrive under pressure and communicate effectively.
                 </p>
                 <a
                   href="https://citrushack2022.vercel.app/"
@@ -205,11 +206,11 @@ export const About = () => {
                   Secretary @ Association of Computing Machinery, UCR
                 </h3>
                 <p className="mb-4 text-sm font-light text-gray-500 dark:text-gray-400">
-                  Boosted engagement 60% by revamping newsletters for 300+
-                  members and grew membership 40% with career-focused content
-                  and mentoring on Medium. My favorite part was seeing how every
-                  member brought their own unique story to the club. Check out
-                  the articles from my term as secretary{" "}
+                  I revamped newsletters for 300+ members, boosting engagement
+                  by 60%, and helped grow membership 40% through career-focused
+                  content and mentoring on Medium. My favorite part was seeing
+                  each member bring their own unique story to the club. You can
+                  explore the articles from my term as secretary{" "}
                   <a
                     href="https://medium.com/acm-at-ucr"
                     target="_blank"
@@ -243,10 +244,10 @@ export const About = () => {
                   A Year of Data Structures & Algorithms
                 </h3>
                 <p className="text-sm font-light text-gray-500 dark:text-gray-400">
-                  Completed 3 quarters of intensive coursework at University of
-                  California, Riverside, gaining hands-on experience in C++ and
-                  mastering core concepts in data structures, algorithms, and
-                  problem-solving.
+                  I completed 3 quarters of intensive coursework at the
+                  University of California, Riverside, gaining hands-on
+                  experience in C++ and mastering core concepts in data
+                  structures, algorithms, and problem-solving.
                 </p>
               </li>
             </ol>
