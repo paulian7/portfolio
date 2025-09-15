@@ -63,12 +63,13 @@ export const Draw = () => {
 
   return (
     <>
-      {/* ensures button is btm right corner */}
-      <div className="fixed bottom-6 right-6 z-50">
-        {/* onClick -- drawing function is set to active, otherwise inactive or when clicked again */}
-        <button
-          onClick={() => setDrawingActive((prev) => !prev)}
-          className={`
+      <div className="hidden md:block">
+        {/* ensures button is btm right corner */}
+        <div className="fixed bottom-6 right-6 z-50">
+          {/* onClick -- drawing function is set to active, otherwise inactive or when clicked again */}
+          <button
+            onClick={() => setDrawingActive((prev) => !prev)}
+            className={`
                 flex items-center justify-center shadow-lg
                 h-14 rounded-full
                 transition-[width,border-radius,transform] duration-500 ease-in-out
@@ -77,29 +78,30 @@ export const Draw = () => {
                 transform hover:scale-110 active:scale-95
                 animate-wiggle animate-pulse-slow
                 `}
-        >
-          <FaPaintBrush size={24} className="flex-shrink-0" />
-          {drawingActive && (
-            <span className="ml-3 text-sm transition-opacity duration-500 ease-in-out">
-              Click to erase completely
-            </span>
-          )}
-        </button>
-      </div>
+          >
+            <FaPaintBrush size={24} className="flex-shrink-0" />
+            {drawingActive && (
+              <span className="ml-3 text-sm transition-opacity duration-500 ease-in-out">
+                Click to erase completely
+              </span>
+            )}
+          </button>
+        </div>
 
-      {drawingActive && (
-        <canvas
-          ref={canvasRef}
-          className="fixed top-0 left-0 w-full h-full z-40 cursor-crosshair"
-          onMouseDown={startDrawing}
-          onMouseMove={draw}
-          onMouseUp={stopDrawing}
-          onMouseLeave={stopDrawing}
-          onTouchStart={handleTouchStart}
-          onTouchMove={handleTouchMove}
-          onTouchEnd={stopDrawing}
-        />
-      )}
+        {drawingActive && (
+          <canvas
+            ref={canvasRef}
+            className="fixed top-0 left-0 w-full h-full z-40 cursor-crosshair"
+            onMouseDown={startDrawing}
+            onMouseMove={draw}
+            onMouseUp={stopDrawing}
+            onMouseLeave={stopDrawing}
+            onTouchStart={handleTouchStart}
+            onTouchMove={handleTouchMove}
+            onTouchEnd={stopDrawing}
+          />
+        )}
+      </div>
     </>
   );
 };
