@@ -13,7 +13,7 @@ export const Footer = () => {
           {/* links side */}
           <div className="flex flex-wrap justify-center sm:justify-start gap-6 md:gap-8">
             <a
-              href="/Paulian_Le_Resume.pdf"
+              href="/Portfolio_Paulian_Le_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#0A7FBF] underline"

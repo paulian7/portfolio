@@ -55,7 +55,7 @@ export const Home = () => {
           {/* buttons & links section */}
           <div className="flex justify-center md:justify-start space-x-6 text-2xl md:text-3xl mb-12">
             <a
-              href="/Paulian_Le_Resume.pdf"
+              href="/Portfolio_Paulian_Le_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Paulian's Resume"
