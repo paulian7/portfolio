@@ -102,7 +102,7 @@ export const About = () => {
                 </a>
                 {", "}
                 <a
-                  href="https://www.imdb.com/title/tt0892769/"
+                  href="https://www.imdb.com/title/tt14452776/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="italic text-[#0A7FBF] underline"
@@ -111,7 +111,7 @@ export const About = () => {
                 </a>
                 {", and "}
                 <a
-                  href="https://www.imdb.com/title/tt0892769/"
+                  href="https://www.imdb.com/title/tt3526078/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="italic text-[#0A7FBF] underline"
