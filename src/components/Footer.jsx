@@ -3,39 +3,20 @@ import { RevealOnScroll } from "./RevealOnScroll";
 export const Footer = () => {
   return (
     <RevealOnScroll>
-      <footer className="border-t border-gray-300 mt-12 py-6">
-        <div className="container mx-auto flex flex-col sm:flex-row justify-center items-center text-sm font-baloo space-y-4 sm:space-y-0 sm:space-x-24 md:space-x-56 px-4">
-          {/* text side*/}
-          <p className="font-semibold text-center sm:text-left">
-            developed by paulian - sept ‘25
-          </p>
+      <footer className="bg-gray-50 backdrop-blur-lg drop-shadow-md border-t border-gray-200 mt-12">
+        <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-6 flex flex-col sm:flex-row justify-between items-center">
+          {/* left text */}
+          <div className="flex-1 flex justify-start">
+            <p className="text-sm text-gray-500 font-baloo">
+              Developed with ♥ – Sept ‘25
+            </p>
+          </div>
 
-          {/* links side */}
-          <div className="flex flex-wrap justify-center sm:justify-start gap-6 md:gap-8">
-            <a
-              href="/Portfolio_Paulian_Le_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#0A7FBF] underline"
-            >
-              my resume
-            </a>
-            <a
-              href="https://www.linkedin.com/in/paulianle/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#0A7FBF] underline"
-            >
-              my linkedin
-            </a>
-            <a
-              href="https://github.com/paulian7"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-[#0A7FBF] underline"
-            >
-              my github
-            </a>
+          {/* right text */}
+          <div className="flex-1 flex justify-end">
+            <p className="text-sm text-gray-500 font-baloo">
+              © 2025 Paulian Le
+            </p>
           </div>
         </div>
       </footer>
