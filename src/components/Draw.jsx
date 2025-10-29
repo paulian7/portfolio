@@ -8,7 +8,6 @@ import { FaPaintBrush } from "react-icons/fa";
 
 export const Draw = () => {
   // == TRACKS THE COMPONENT STATES ==
-
   // drawingActive - true when user clicks btn to start drawing
   const [drawingActive, setDrawingActive] = useState(false);
 
@@ -22,28 +21,59 @@ export const Draw = () => {
   useEffect(() => {
     if (!canvasRef.current) return;
     const canvas = canvasRef.current; // our curr paper we're drawing on
-    canvas.width = window.innerWidth; // grabs curr window width
-    canvas.height = window.innerHeight; // grabs curr window height
+
+    // ensures no pixelated drawings
+    const resizeCanvas = () => {
+      const rect = canvas.getBoundingClientRect();
+      const ratio = window.devicePixelRatio || 1;
+
+      // Set the internal pixel size to CSS size * device pixel ratio
+      canvas.width = Math.round(rect.width * ratio);
+      canvas.height = Math.round(rect.height * ratio);
+
+      // ensure the canvas CSS size still matches the layout
+      canvas.style.width = `${rect.width}px`;
+      canvas.style.height = `${rect.height}px`;
+
+      const ctx = canvas.getContext("2d");
+      ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+      ctx.lineJoin = "round";
+      ctx.lineCap = "round";
+      ctx.lineWidth = 3;
+    };
+
+    // initializes and keeps size updated while active
+    resizeCanvas();
+    window.addEventListener("resize", resizeCanvas);
+    return () => window.removeEventListener("resize", resizeCanvas);
   }, [drawingActive]);
 
   // logic for drawing w/ a mouse -- sets it up
   const startDrawing = (e) => {
     if (!drawingActive) return;
     setIsDrawing(true);
-    const ctx = canvasRef.current.getContext("2d");
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext("2d");
     ctx.strokeStyle = "#0A7FBF";
-    ctx.lineWidth = 3;
-    ctx.lineJoin = "round";
-    ctx.lineCap = "round";
+
+    // begin a fresh path and move to the pointer position adjusted for canvas bounding rect
     ctx.beginPath(); // starts new path (aka new set of drawing)
-    ctx.moveTo(e.clientX, e.clientY);
+
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    ctx.moveTo(x, y);
   };
 
   // drawing logic for when mouse is movin' around
   const draw = (e) => {
     if (!isDrawing) return;
-    const ctx = canvasRef.current.getContext("2d");
-    ctx.lineTo(e.clientX, e.clientY); // draws to where mouse pos is next
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext("2d");
+    const rect = canvas.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    ctx.lineTo(x, y); // draws to where mouse pos is next
     ctx.stroke(); // makes drawing show up
   };
 
@@ -53,6 +83,7 @@ export const Draw = () => {
   // DEALS W/ MOBILE ====
   const handleTouchStart = (e) => {
     e.preventDefault();
+    // touches[0] has clientX/clientY like mouse events
     startDrawing(e.touches[0]); // gets first pos of wherever finger first touched
   };
 
@@ -61,28 +92,33 @@ export const Draw = () => {
     draw(e.touches[0]);
   };
 
+  // toggle handler - clears canvas when turning off (matching the button copy)
+  const toggleDrawing = () => {
+    if (drawingActive && canvasRef.current) {
+      const ctx = canvasRef.current.getContext("2d");
+      ctx.clearRect(0, 0, canvasRef.current.width, canvasRef.current.height);
+    }
+    setDrawingActive((p) => !p);
+  };
+
   return (
     <>
-      <div className="hidden md:block">
-        {/* ensures button is btm right corner */}
+      {/* ensure draw feature only shows up on desktop */}
+      <div className="hidden lg:block">
         <div className="fixed bottom-6 right-6 z-50">
-          {/* onClick -- drawing function is set to active, otherwise inactive or when clicked again */}
           <button
-            onClick={() => setDrawingActive((prev) => !prev)}
-            className={`
-                flex items-center justify-center shadow-lg
-                h-14 rounded-full
-                transition-[width,border-radius,transform] duration-500 ease-in-out
-                bg-[#0A7FBF] hover:bg-gray-500 text-white
-                ${drawingActive ? "w-60 rounded-lg px-4" : "w-14"}
-                transform hover:scale-110 active:scale-95
-                animate-wiggle animate-pulse-slow
-                `}
+            onClick={toggleDrawing}
+            className={
+              `flex items-center justify-center shadow-md h-14 rounded-full transition-all duration-300 ease-out bg-[#0A7FBF] hover:bg-[#086a99] text-white ${
+                drawingActive ? "w-60 rounded-lg px-4" : "w-14"
+              } transform-gpu will-change-transform hover:scale-105 active:scale-95 animate-wiggle animate-pulse-slow motion-reduce:transition-none motion-reduce:animate-none`
+            }
+            aria-pressed={drawingActive}
           >
             <FaPaintBrush size={24} className="flex-shrink-0" />
             {drawingActive && (
-              <span className="ml-3 text-sm transition-opacity duration-500 ease-in-out">
-                Click to erase completely
+              <span className="ml-3 text-sm transition-opacity duration-200 ease-out motion-reduce:transition-none">
+                Click to erase completely!
               </span>
             )}
           </button>
