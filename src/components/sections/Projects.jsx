@@ -16,7 +16,7 @@ export const Projects = () => {
           {/* grid of projects */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* project 1 - personal portfolio */}
-            <div className="p-6 rounded-lg shadow-md bg-white hover:-translate-y-1 hover:shadow-lg transition-transform space-y-4">
+            <div className="p-6 rounded-lg shadow-md bg-white hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out space-y-4">
               <img
                 src="/projects/portfolio.png"
                 alt="Screenshot of Personal Portfolio project"
@@ -54,7 +54,7 @@ export const Projects = () => {
             </div>
 
             {/* project 2 - omega */}
-            <div className="p-6 rounded-lg shadow-md bg-white hover:-translate-y-1 hover:shadow-lg transition-transform space-y-4">
+            <div className="p-6 rounded-lg shadow-md bg-white hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out space-y-4">
               <img
                 src="/projects/omega.png"
                 alt="Screenshot of OMEGA Air Quality Web App"
@@ -98,7 +98,7 @@ export const Projects = () => {
             </div>
 
             {/* project 3 - novo */}
-            <div className="p-6 rounded-lg shadow-md bg-white hover:-translate-y-1 hover:shadow-lg transition-transform space-y-4">
+            <div className="p-6 rounded-lg shadow-md bg-white hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out space-y-4">
               <img
                 src="/projects/novo.png"
                 alt="Screenshot of NOVO Site"
