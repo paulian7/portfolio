@@ -2,7 +2,7 @@ import { FaArrowRight } from "react-icons/fa6";
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
-  // timeline items 
+  // timeline items
   const timelineItems = [
     {
       date: "Jun 2024 – Present",
@@ -84,7 +84,10 @@ export const About = () => {
           {/* left col - edu && outside tech */}
           <div className="space-y-12">
             {/* education box */}
-            <div className="p-6 bg-white rounded-2xl shadow-md">
+            <div
+              className="p-6 bg-white rounded-2xl shadow-md hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out
+"
+            >
               <h3 className="text-2xl font-bold mb-4 font-baloo text-black">
                 Education
               </h3>
@@ -100,7 +103,10 @@ export const About = () => {
             </div>
 
             {/* outside tech box */}
-            <div className="p-6 bg-white rounded-2xl shadow-md space-y-4">
+            <div
+              className="p-6 bg-white rounded-2xl shadow-md space-y-4 hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out
+"
+            >
               <h3 className="text-2xl font-bold mb-2 text-black font-baloo">
                 Outside of Tech
               </h3>
@@ -147,7 +153,10 @@ export const About = () => {
               {timelineItems.map((item, index) => (
                 <RevealOnScroll key={index}>
                   {/* box */}
-                  <div className="p-6 bg-white rounded-2xl shadow-md relative">
+                  <div
+                    className="p-6 bg-white rounded-2xl shadow-md relative hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out
+"
+                  >
                     {/* timeline circle */}
                     <div className="absolute -left-3 top-6 w-4 h-4 bg-[#0A7FBF] rounded-full border-2 border-white shadow-sm"></div>
                     {/* date */}
@@ -172,7 +181,8 @@ export const About = () => {
                             href={item.link.href}
                             className="text-[#0A7FBF] font-medium hover:underline"
                           >
-                            {item.link.text} <FaArrowRight className="inline ml-1" />
+                            {item.link.text}{" "}
+                            <FaArrowRight className="inline ml-1" />
                           </a>
                         ) : (
                           <a
@@ -181,7 +191,8 @@ export const About = () => {
                             rel="noopener noreferrer"
                             className="text-[#0A7FBF] font-medium hover:underline"
                           >
-                            {item.link.text} <FaArrowRight className="inline ml-1" />
+                            {item.link.text}{" "}
+                            <FaArrowRight className="inline ml-1" />
                           </a>
                         )}
                       </p>

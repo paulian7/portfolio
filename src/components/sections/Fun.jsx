@@ -110,7 +110,10 @@ export const Fun = () => {
         {/* THE GRID OF CONTENT! */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 max-w-6xl mx-auto w-full px-6">
           {/* LEFT COL - favorite snapshots (big feature visual) */}
-          <div className="bg-white rounded-xl shadow-md p-6 flex flex-col">
+          <div
+            className="bg-white rounded-xl shadow-md p-6 flex flex-col hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out
+"
+          >
             <h3 className="text-lg font-bold mb-4 text-black font-baloo">
               My Favorite Snapshots 📸
             </h3>
@@ -131,9 +134,12 @@ export const Fun = () => {
           {/* MIDDLE COL - books + spotify */}
           <div className="flex flex-col gap-6">
             {/* recently read books, dynamic / pulls from supabase */}
-            <div className="bg-white rounded-xl shadow-md p-6 w-[115%] -ml-[7%]">
+            <div
+              className="bg-white rounded-xl shadow-md p-6 w-[115%] -ml-[7%] hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out
+"
+            >
               <h3 className="text-lg font-bold mb-4 text-black font-baloo">
-                Recently Read Book 
+                Recently Read Book
               </h3>
 
               {books && books.length > 0 ? (
@@ -170,7 +176,10 @@ export const Fun = () => {
             </div>
 
             {/* spotify - soundtrack playlist */}
-            <div className="bg-white rounded-xl shadow-md p-6 w-[115%] -ml-[7%]">
+            <div
+              className="bg-white rounded-xl shadow-md p-6 w-[115%] -ml-[7%] hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out
+"
+            >
               <h3 className="text-lg font-bold mb-4 text-black font-baloo">
                 My Soundtrack Playlist 🎥
               </h3>
@@ -190,7 +199,10 @@ export const Fun = () => {
           {/* RIGHT COL - movies, tv, matcha rankings */}
           <div className="flex flex-col gap-6">
             {/* top 3 - movie rankings (dynamic - populates from supabase) */}
-            <div className="bg-white rounded-xl shadow-md p-6">
+            <div
+              className="bg-white rounded-xl shadow-md p-6 hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out
+"
+            >
               <h3 className="text-lg font-bold mb-2 text-black font-baloo">
                 Movie Rankings 🎬
               </h3>
@@ -213,9 +225,12 @@ export const Fun = () => {
             </div>
 
             {/* top 3 - tv show rankings (dynamic - populates from supabase) */}
-            <div className="bg-white rounded-xl shadow-md p-6">
-              <h3 className="text-lg font-bold mb-2 text-black font-baloo">
-                TV Show Rankings 
+            <div
+              className="bg-white rounded-xl shadow-md p-6 hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out
+"
+            >
+              <h3 className="text-lg font-bold mb-2 text-black font-baloo ">
+                TV Show Rankings
               </h3>
               <ol className="list-decimal list-inside text-gray-700 space-y-1">
                 {tvShows.length > 0
@@ -236,9 +251,12 @@ export const Fun = () => {
             </div>
 
             {/* top 3 - matcha rankings */}
-            <div className="bg-white rounded-xl shadow-md p-6">
+            <div
+              className="bg-white rounded-xl shadow-md p-6 hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out
+"
+            >
               <h3 className="text-lg font-bold mb-2 text-black font-baloo">
-                Matcha Rankings 
+                Matcha Rankings
               </h3>
               <ol className="list-decimal list-inside text-gray-700 space-y-1">
                 <li>Airoma</li>
