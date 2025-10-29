@@ -46,24 +46,28 @@ export const Home = () => {
           </p>
 
           {/* buttons & links section */}
-          <div className="flex flex-wrap items-center gap-3">
-            <a
-                  href="/Portfolio_Paulian_Le_Resume.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-center px-5 py-2 rounded-full bg-[#0A7FBF] text-white text-sm font-medium shadow-sm hover:shadow-md transition"
-                >
-                  View Resume
-                </a>
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mt-4">
+            {/* resume, learn more btns */}
+            <div className="flex flex-wrap justify-center sm:justify-start gap-3">
+              <a
+                href="/Portfolio_Paulian_Le_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center px-5 py-2 rounded-full bg-[#0A7FBF] text-white text-sm font-medium shadow-sm hover:shadow-md transition"
+              >
+                View Resume
+              </a>
 
-            <a
-              href="#about"
-              className="inline-flex items-center justify-center px-5 py-2 rounded-full border border-gray-200 text-sm text-gray-800 bg-white hover:bg-gray-50 transition"
-            >
-              Learn More →
-            </a>
+              <a
+                href="#about"
+                className="inline-flex items-center justify-center px-5 py-2 rounded-full border border-gray-200 text-sm text-gray-800 bg-white hover:bg-gray-50 transition"
+              >
+                Learn More →
+              </a>
+            </div>
 
-            <div className="ml-auto flex items-center gap-3">
+            {/* social icons */}
+            <div className="flex justify-center sm:justify-end items-center gap-3">
               <a
                 href="https://www.linkedin.com/in/paulianle/"
                 target="_blank"
