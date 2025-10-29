@@ -50,7 +50,7 @@ export const Home = () => {
             {/* resume, learn more btns */}
             <div className="flex flex-wrap justify-center sm:justify-start gap-3">
               <a
-                href="/Portfolio_Paulian_Le_Resume.pdf"
+                href="https://ekzqhicqwohoqjtlebsh.supabase.co/storage/v1/object/public/resumes/Paulian_Le_resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-5 py-2 rounded-full bg-[#0A7FBF] text-white text-sm font-medium shadow-sm hover:shadow-md transition"
