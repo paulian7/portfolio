@@ -60,7 +60,6 @@ export const Fun = () => {
       });
 
       setImages(urls.filter((url) => url));
-      console.log("Snapshot URLs:", urls);
     };
 
     fetchImages();
@@ -133,11 +132,8 @@ export const Fun = () => {
 
           {/* MIDDLE COL - books + spotify */}
           <div className="flex flex-col gap-6">
-            {/* recently read books, dynamic / pulls from supabase */}
-            <div
-              className="bg-white rounded-xl shadow-md p-6 w-[115%] -ml-[7%] hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out
-"
-            >
+            {/* recently read books */}
+            <div className="bg-white rounded-xl shadow-md p-6 w-full lg:w-[115%] lg:-ml-[7%] hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out">
               <h3 className="text-lg font-bold mb-4 text-black font-baloo">
                 Recently Read Book
               </h3>
@@ -146,7 +142,7 @@ export const Fun = () => {
                 (() => {
                   const book = books[0];
                   return (
-                    <div className="flex items-start gap-6 bg-gray-50 p-5 rounded-lg">
+                    <div className="flex flex-col sm:flex-row items-start gap-4 sm:gap-6 bg-gray-50 p-4 sm:p-5 rounded-lg">
                       {book.cover_url && (
                         <img
                           src={book.cover_url}
@@ -176,10 +172,7 @@ export const Fun = () => {
             </div>
 
             {/* spotify - soundtrack playlist */}
-            <div
-              className="bg-white rounded-xl shadow-md p-6 w-[115%] -ml-[7%] hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out
-"
-            >
+            <div className="bg-white rounded-xl shadow-md p-6 w-full lg:w-[115%] lg:-ml-[7%] hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out">
               <h3 className="text-lg font-bold mb-4 text-black font-baloo">
                 My Soundtrack Playlist 🎥
               </h3>

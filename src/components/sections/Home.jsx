@@ -5,7 +5,7 @@ export const Home = () => {
   return (
     <section
       id="home"
-      className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-8 md:gap-36 px-6 md:px-16 lg:px-24 pt-20 sm:pt-24"
+      className="min-h-screen flex flex-col md:flex-row items-center justify-center gap-8 md:gap-36 px-6 md:px-16 lg:px-24 pt-28 sm:pt-32 md:pt-24 pb-20 sm:pb-24"
     >
       {/* picture */}
       <RevealOnScroll>
@@ -60,7 +60,7 @@ export const Home = () => {
 
               <a
                 href="#about"
-                className="inline-flex items-center justify-center px-5 py-2 rounded-full border border-gray-200 text-sm text-gray-800 bg-white hover:bg-gray-50 transition"
+                className="inline-flex items-center justify-center px-5 py-2 rounded-full border border-gray-200 shadow-sm text-sm text-gray-800 bg-white hover:bg-gray-50 transition"
               >
                 Learn More →
               </a>
@@ -73,7 +73,7 @@ export const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Paulian's LinkedIn"
-                className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-[#0A7FBF] hover:shadow-md transition"
+                className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-[#0A7FBF] hover:bg-gray-50 transition border border-gray-200"
               >
                 <FaLinkedin />
               </a>
@@ -83,7 +83,7 @@ export const Home = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Paulian's GitHub"
-                className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-gray-800 hover:shadow-md transition"
+                className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-gray-800 hover:bg-gray-50 transition border border-gray-200"
               >
                 <FaGithubSquare />
               </a>
