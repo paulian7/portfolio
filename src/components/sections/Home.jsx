@@ -13,7 +13,7 @@ export const Home = () => {
           <img
             src="/landingPic.png"
             alt="Home page picture displaying Paulian"
-            className="rounded-lg object-cover w-64 sm:w-72 md:w-80 lg:w-[450px] max-w-full shadow-md"
+            className="rounded-2xl object-cover w-64 sm:w-72 md:w-80 lg:w-[450px] max-w-full shadow-md"
           />
         </div>
       </RevealOnScroll>
@@ -21,13 +21,12 @@ export const Home = () => {
       {/* text */}
       <RevealOnScroll>
         <div className="flex flex-col max-w-xl text-center md:text-left self-center mt-10 md:mt-0">
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold mb-6 font-baloo break-words">
-            Hello hello!
+          <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold mb-6 font-baloo break-words leading-tight">
+            Hi, I'm Paulian!
           </h1>
 
-          <p className="text-base sm:text-lg mb-4 font-normal leading-loose">
-            I’m Paulian{" "}
-            <span className="italic">(pronounced Paul-Lee-Anne)</span> — a{" "}
+          <p className="text-base sm:text-lg text-gray-700 mb-4 leading-relaxed">
+            A{" "}
             <span className="text-[#0A7FBF] font-medium">
               software engineer
             </span>{" "}
@@ -35,52 +34,56 @@ export const Home = () => {
             <span className="text-[#0A7FBF] font-medium">
               product enthusiast
             </span>{" "}
-            who loves building projects that spark meaningful change. Whether
-            developing a web app for a research group or directing operations
-            for a major hackathon, I thrive at the intersection of technical
-            problem-solving and community impact.
+            who loves building projects that make information more meaningful
+            and accessible. Whether developing a web app for a research team or
+            directing operations for large-scale hackathons, I thrive at the
+            intersection of technology, storytelling, and community impact.
           </p>
 
-          <p className="text-base sm:text-lg mb-6 font-normal leading-loose">
-            Outside of work, I’m usually running, watching movies/tv shows,
+          <p className="text-base sm:text-lg text-gray-700 mb-6 leading-relaxed">
+            Outside of work, I’m usually running, watching films or TV shows,
             reading, or finding my next cup of matcha.{" "}
-            <a
-              href="#about"
-              className="text-[#0A7FBF] font-medium hover:underline"
-            >
-              Learn more about me →
-            </a>
           </p>
 
           {/* buttons & links section */}
-          <div className="flex justify-center md:justify-start space-x-6 text-2xl md:text-3xl mb-12">
+          <div className="flex flex-wrap items-center gap-3">
             <a
-              href="/Portfolio_Paulian_Le_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Paulian's Resume"
-              className="hover:-translate-y-1 hover:shadow-lg transition-transform hover:text-gray-500"
-            >
-              <FaFileAlt />
-            </a>
+                  href="/Portfolio_Paulian_Le_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-5 py-2 rounded-full bg-[#0A7FBF] text-white text-sm font-medium shadow-sm hover:shadow-md transition"
+                >
+                  View Resume
+                </a>
+
             <a
-              href="https://www.linkedin.com/in/paulianle/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Paulian's LinkedIn"
-              className="hover:-translate-y-1 hover:shadow-lg transition-transform hover:text-gray-500"
+              href="#about"
+              className="inline-flex items-center justify-center px-5 py-2 rounded-full border border-gray-200 text-sm text-gray-800 bg-white hover:bg-gray-50 transition"
             >
-              <FaLinkedin />
+              Learn More →
             </a>
-            <a
-              href="https://github.com/paulian7"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Paulian's GitHub"
-              className="hover:-translate-y-1 hover:shadow-lg transition-transform hover:text-gray-500"
-            >
-              <FaGithubSquare />
-            </a>
+
+            <div className="ml-auto flex items-center gap-3">
+              <a
+                href="https://www.linkedin.com/in/paulianle/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Paulian's LinkedIn"
+                className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-[#0A7FBF] hover:shadow-md transition"
+              >
+                <FaLinkedin />
+              </a>
+
+              <a
+                href="https://github.com/paulian7"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Paulian's GitHub"
+                className="w-10 h-10 rounded-full bg-white shadow-sm flex items-center justify-center text-gray-800 hover:shadow-md transition"
+              >
+                <FaGithubSquare />
+              </a>
+            </div>
           </div>
         </div>
       </RevealOnScroll>
