@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { supabase } from "../lib/supabaseClient"; 
+import { supabase } from "../lib/supabaseClient";
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Projects = () => {
@@ -8,10 +8,7 @@ export const Projects = () => {
   useEffect(() => {
     // grabs project data from supabase
     const fetchProjects = async () => {
-      const { data, error } = await supabase
-        .from("projects")
-        .select("*")
-        .order("created_at", { ascending: false });
+      const { data, error } = await supabase.from("projects").select("*"); // removed order() so we can sort manually
 
       if (error) {
         console.error("Error fetching projects:", error);
@@ -28,6 +25,12 @@ export const Projects = () => {
           image_url: publicUrlData.publicUrl,
         };
       });
+
+      // order we want 
+      const order = ["Personal Portfolio", "OMEGA Initiative", "NOVO"];
+      projectsWithUrls.sort(
+        (a, b) => order.indexOf(a.title) - order.indexOf(b.title)
+      );
 
       setProjects(projectsWithUrls);
     };

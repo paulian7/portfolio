@@ -135,7 +135,7 @@ export const Fun = () => {
             {/* recently read books */}
             <div className="bg-white rounded-xl shadow-md p-6 w-full lg:w-[115%] lg:-ml-[7%] hover:-translate-y-1 hover:shadow-lg transition-transform duration-400 ease-out">
               <h3 className="text-lg font-bold mb-4 text-black font-baloo">
-                Recently Read Book
+                Recently Read 
               </h3>
 
               {books && books.length > 0 ? (

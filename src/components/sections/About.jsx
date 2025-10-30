@@ -76,22 +76,21 @@ export const About = () => {
               <p className="text-gray-700 leading-relaxed text-base">
                 I'm a huge{" "}
                 <span className="text-[#0A7FBF] font-medium">matcha</span> lover
-                — but if I'm not sipping on matcha, you'll probably find me with
-                a cup of{" "}
-                <span className="text-[#0A7FBF] font-medium">coffee</span> in my
-                hand.
+                — but if I'm not drinking on matcha, you'll probably find me drinking{" "}
+                <span className="text-[#0A7FBF] font-medium">coffee</span>.
               </p>
 
               <p className="text-gray-700 leading-relaxed text-base">
-                Outside of my caffeine obsession, I'm an absolute{" "}
+                Outside of matcha and coffee, I'm an absolute{" "}
                 <span className="text-[#0A7FBF] font-medium">film fanatic</span>
                 .
               </p>
 
               <p className="text-gray-700 leading-relaxed text-base">
-                As a result, I almost always have a movie soundtrack playing
-                while I work — and I even put together a Spotify playlist with
-                my favorite pieces if you’d like to check it out{" "}
+                It’s almost guaranteed you’ll find me in my own world, working
+                away with a movie soundtrack playing in the background. If you’d
+                like to listen to a few of my favorite pieces, feel free to
+                check them out{" "}
                 <a
                   href="#fun"
                   className="text-[#0A7FBF] font-medium hover:underline"

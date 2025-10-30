@@ -34,15 +34,16 @@ export const Home = () => {
             <span className="text-[#0A7FBF] font-medium">
               product enthusiast
             </span>{" "}
-            who loves building projects that make information more meaningful
-            and accessible. Whether developing a web app for a research team or
-            directing operations for large-scale hackathons, I thrive at the
-            intersection of technology, storytelling, and community impact.
+            who loves building tools and experiences that make information more
+            meaningful and accessible. Whether developing a data visualization
+            platform for environmental researchers or directing large-scale
+            hackathon operations, I thrive at the intersection of technology,
+            storytelling, and community impact.
           </p>
 
           <p className="text-base sm:text-lg text-gray-700 mb-6 leading-relaxed">
             Outside of work, I’m usually running, watching films or TV shows,
-            reading, or finding my next cup of matcha.{" "}
+            reading, or cafe hopping.{" "}
           </p>
 
           {/* buttons & links section */}
