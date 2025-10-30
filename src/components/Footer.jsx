@@ -1,8 +1,5 @@
-import { RevealOnScroll } from "./RevealOnScroll";
-
 export const Footer = () => {
   return (
-    <RevealOnScroll>
       <footer className="bg-gray-50 backdrop-blur-lg drop-shadow-md border-t border-gray-200 mt-12">
         <div className="max-w-7xl mx-auto px-6 md:px-16 lg:px-24 py-6 flex flex-col sm:flex-row justify-between items-center">
           {/* left text */}
@@ -20,6 +17,5 @@ export const Footer = () => {
           </div>
         </div>
       </footer>
-    </RevealOnScroll>
   );
 };
